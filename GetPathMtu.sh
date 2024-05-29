@@ -36,7 +36,7 @@ function Get-PathMtu() {
 
     sendBufferSize=0
     tempPassedBufferSize=$startSendBufferSize
-	  echo -n "Test started ...."
+    echo -n "Test started ...."
     while [ $tempPassedBufferSize -ne $sendBufferSize ]; do
 
         sendBufferSize=$tempPassedBufferSize
