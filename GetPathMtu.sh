@@ -56,7 +56,7 @@ function Get-PathMtu() {
             then
                 break
             fi
-			echo -n "...."
+	    echo -n "...."
             successfullBufferSize=$tempSendBufferSize
             tempSendBufferSize=$(($tempSendBufferSize + 2**$counter))
             counter=$(($counter + 1))
@@ -64,6 +64,6 @@ function Get-PathMtu() {
         tempPassedBufferSize=$successfullBufferSize
     done
     finalMtuInTopology=$(($sendBufferSize + 28))          
-	echo ""
+    echo ""
     echo  "$finalMtuInTopology"
 }
