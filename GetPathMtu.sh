@@ -10,8 +10,8 @@ ErrorMsg="Initial ping failed"
 #################
 #How to use this function
 # examples
-# source LinuxVmUtilities.sh;Get-PathMtu <destination-ip> <initial-packet-size> <interface-name>
-# source LinuxVmUtilities.sh;Get-PathMtu 8.8.8.8 1200 eth0
+# source GetPathMtu.sh;Get-PathMtu <destination-ip> <initial-packet-size> <interface-name>
+# source GetPathMtu.sh;Get-PathMtu 8.8.8.8 1200 eth0
 # note: 
 # 1. give initial packet size (1200 in above example) always a successfull ping packet-size
 # 2. give correct interface name, code failes if interface name is wrong
